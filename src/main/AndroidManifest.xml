@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zms.logcat">
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <!-- for GoogleTV -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:name="com.zms.logcat.TLogcatApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.zms.logcat.Main"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="com.zms.logcat.intent.START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zms.logcat.PrefsActivity"
+            android:label="@string/app_prefs" />
+
+        <service android:name="com.zms.logcat.SaveService" />
+        <service android:name="com.zms.logcat.ShareService" />
+        <service android:name=".LogcatRecordService" />
+
+        <receiver android:name="com.zms.logcat.SaveReceiver">
+            <intent-filter>
+                <action android:name="com.zms.logcat.intent.SAVE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zms.logcat.ShareReceiver">
+            <intent-filter>
+                <action android:name="com.zms.logcat.intent.SHARE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

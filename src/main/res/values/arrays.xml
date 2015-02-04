@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="level_entries">
+        <item>详细​​​​​</item>
+        <item>调试​​​</item>
+        <item>信息​​​​​​​​​</item>
+        <item>警告​​​​​</item>
+        <item>错误​​​</item>
+        <item>致命错误​</item>
+    </string-array>
+    <string-array name="level_values">
+        <item>V</item>
+        <item>D</item>
+        <item>I</item>
+        <item>W</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="format_entries">
+        <item>摘要​​​</item>
+        <item>进程​​​​​</item>
+        <item>标签​</item>
+        <item>线程​​​​</item>
+        <item>线程时间​​​​​​​</item>
+        <item>时间​​</item>
+        <item>长整型​</item>
+        <item>原生​</item>
+    </string-array>
+    <string-array name="format_values">
+        <item>BRIEF</item>
+        <item>PROCESS</item>
+        <item>TAG</item>
+        <item>THREAD</item>
+        <item>THREADTIME</item>
+        <item>TIME</item>
+        <item>LONG</item>
+        <item>RAW</item>
+    </string-array>
+    <string-array name="buffer_entries">
+        <item>主要​​</item>
+        <item>事件​​​​</item>
+        <item>广播​​​</item>
+    </string-array>
+    <string-array name="buffer_values">
+        <item>MAIN</item>
+        <item>EVENTS</item>
+        <item>RADIO</item>
+    </string-array>
+    <string-array name="textsize_entries">
+        <item>小​​​​</item>
+        <item>中(默认)​​​​​​​​​​​</item>
+        <item>大​​​​</item>
+    </string-array>
+    <string-array name="textsize_values">
+        <item>SMALL</item>
+        <item>MEDIUM</item>
+        <item>LARGE</item>
+    </string-array>
+    <string-array name="backgroundColor_entries">
+        <item>白色​​​</item>
+        <item>灰色​​</item>
+        <item>黑色​​​</item>
+    </string-array>
+    <string-array name="backgroundColor_values">
+        <item>\#ffffff</item>
+        <item>\#e0e0e0</item>
+        <item>\#000000</item>
+    </string-array>
+    <string-array name="periodicFrequency_values">
+        <item>FIFTEEN_MINUTES</item>
+        <item>HALF_HOUR</item>
+        <item>HOUR</item>
+    </string-array>
+    <string-array name="periodicFrequency_entries">
+        <item>15 分钟​​​​​</item>
+        <item>30 分钟​​​</item>
+        <item>60 分钟​</item>
+    </string-array>
+    
+   	<string-array name="log_levels_values">
+	<item>@string/log_level_value_verbose</item>
+	<item>@string/log_level_value_debug</item>
+	<item>@string/log_level_value_info</item>
+	<item>@string/log_level_value_warn</item>
+	<item>@string/log_level_value_error</item>
+	<item>@string/log_level_value_wtf</item>
+	</string-array>	 
+</resources>
